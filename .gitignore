@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Zoom/.vs
+/Zoom/bin
+/Zoom/obj
+/GameHelper/bin
+/GameHelper/obj
