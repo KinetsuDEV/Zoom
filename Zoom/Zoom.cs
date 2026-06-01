@@ -257,7 +257,7 @@ namespace Zoom
 
             IntPtr zoomPatchAddress = IntPtr.Add(zoomMemoryAllocation, sizeof(float) + 2);
 
-            IntPtr patchAddress = (nint)SigScan.FindPattern("F3 0F 5D ? ? ? ? ? F3 0F 11 ? ? ? ? ? C6", out _);
+            IntPtr patchAddress = (nint)SigScan.FindPattern("F3 0F 5D 0D ? ? ? ? F3 0F 11 8E ? ? ? ? 41 C6 06 01", out _);
             if (patchAddress == IntPtr.Zero)
             {
                 return;
